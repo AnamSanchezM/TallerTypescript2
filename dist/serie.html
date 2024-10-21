@@ -1,0 +1,78 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Series</title>
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+  <style>
+    /* Limita el ancho de la tabla */
+    .table-container {
+      max-width: 600px; /* Ajusta el ancho según necesites */
+      margin: 20px auto; /* Centra horizontalmente */
+    }
+
+    /* Personalización adicional para el encabezado */
+    .header {
+      background-color: #007b8b; /* Fondo azul */
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      color: white;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%; /* Redondear el logo */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <img src="https://png.pngtree.com/png-vector/20220509/ourmid/pngtree-vector-of-abstract-neon-tv-light-on-a-brick-wall-vector-png-image_30305554.jpg" alt="TV Series Logo" class="logo">
+    <h1>TV Series</h1>
+  </header>
+
+  <!-- Contenedor de la tabla -->
+  <div class="table-container">
+    <h2 class="text-center my-4">Listado de Series</h2>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+        </tr>
+      </thead>
+      <tbody id="series-table">
+        <!-- Las series se agregarán dinámicamente aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center vh-100">
+    <div id="series-detail-card" class="card" style="display: none;">
+      <img id="series-image" class="card-img-top img-fluid" style="max-width: 300px; height: 300px; object-fit: contain;" alt="Imagen de la serie">
+      <div class="card-body">
+        <h5 id="series-title" class="card-title"></h5>
+        <p id="series-description" class="card-text"></p>
+        <a id="series-link" class="card-link" target="_blank">Ver más</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
+
+
+</body>
